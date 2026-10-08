@@ -209,7 +209,7 @@ footer{background:#281916;color:#fff;padding:30px 0 90px;margin-top:0}
  <div class="container footer-grid">
   <div><h3>DIANA's Kitchen</h3><p>Rasa rumahan yang dibuat dengan hati.</p></div>
   <div><p><b>JAM BUKA</b><br>Senin — Minggu<br>10.00 — 21.00 WIB</p></div>
-  <div><p><b>PEMESANAN</b><br>WhatsApp: 0812-8963-6568<br>TikTok: @dianaskitchen</p></div>
+  <div><p><b>PEMESANAN</b><br>WhatsApp: 0812-8963-6568<br>TikTok: @dianadee23.46</p></div>
  </div>
  <div class="container copyright">© 2026 DIANA's Kitchen • All Rights Reserved</div>
 </footer>
@@ -340,7 +340,38 @@ function sendCart(){
 }
 
 /* Notifikasi contoh aktivitas pesanan */
-const orders=[["Rina","Nasi Goreng Cinta","2 menit lalu"],["Siti","Ayam Geprek","5 menit lalu"],["Andi","Paket Ayam Lengkap","8 menit lalu"],["Dewi","Mie Goreng Spesial","11 menit lalu"],["Budi","Es Teh Manis","14 menit lalu"]];
+const orders=[
+  ["Rina","Nasi Goreng Cinta","2 menit lalu"],
+  ["Siti","Bubur Sumsum Jenang","4 menit lalu"],
+  ["Andi","Dimsum Kebahagiaan","6 menit lalu"],
+  ["Dewi","Pangsit Kuah Merindu","8 menit lalu"],
+  ["Budi","Pangsit Goreng Merindu","10 menit lalu"],
+  ["Lina","Singkong Thailand Kesayangan","12 menit lalu"],
+  ["Wahyu","Nasi Goreng Cinta","15 menit lalu"],
+  ["Fitri","Dimsum Kebahagiaan","17 menit lalu"],
+  ["Rizky","Bubur Sumsum Jenang","19 menit lalu"],
+  ["Dian","Pangsit Goreng Merindu","21 menit lalu"],
+  ["Agus","Pangsit Kuah Merindu","23 menit lalu"],
+  ["Novi","Singkong Thailand Kesayangan","25 menit lalu"],
+  ["Yani","Nasi Goreng Cinta","28 menit lalu"],
+  ["Fajar","Dimsum Kebahagiaan","31 menit lalu"],
+  ["Tika","Bubur Sumsum Jenang","34 menit lalu"],
+  ["Hendra","Pangsit Kuah Merindu","37 menit lalu"],
+  ["Maya","Singkong Thailand Kesayangan","40 menit lalu"],
+  ["Doni","Pangsit Goreng Merindu","43 menit lalu"],
+  ["Ayu","Nasi Goreng Cinta","46 menit lalu"],
+  ["Rian","Dimsum Kebahagiaan","49 menit lalu"],
+  ["Putri","Bubur Sumsum Jenang","52 menit lalu"],
+  ["Arif","Pangsit Goreng Merindu","55 menit lalu"],
+  ["Wulan","Pangsit Kuah Merindu","58 menit lalu"],
+  ["Bayu","Singkong Thailand Kesayangan","1 jam lalu"],
+  ["Citra","Nasi Goreng Cinta","1 jam lalu"],
+  ["Dimas","Dimsum Kebahagiaan","1 jam lalu"],
+  ["Salsa","Bubur Sumsum Jenang","1 jam lalu"],
+  ["Yoga","Pangsit Kuah Merindu","1 jam lalu"],
+  ["Nanda","Pangsit Goreng Merindu","1 jam lalu"],
+  ["Rara","Singkong Thailand Kesayangan","1 jam lalu"]
+];
 let ni=0;
 function showOrder(){
  const x=orders[ni++%orders.length];
