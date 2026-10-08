@@ -166,10 +166,9 @@ footer{background:#281916;color:#fff;padding:30px 0 90px;margin-top:0}
   <div class="section-title"><div><h2>Menu Pilihan</h2><p>Favorit pelanggan DIANA's Kitchen</p></div></div>
   <div class="categories">
    <button class="cat active" onclick="filterMenu('Semua',this)">Semua</button>
-   <button class="cat" onclick="filterMenu('Nasi',this)">🍚 Nasi</button>
-   <button class="cat" onclick="filterMenu('Ayam',this)">🍗 Ayam</button>
-   <button class="cat" onclick="filterMenu('Mie',this)">🍜 Mie</button>
-   <button class="cat" onclick="filterMenu('Minuman',this)">🥤 Minuman</button>
+<button class="cat" onclick="filterMenu('Nasi',this)">🍚 Nasi</button>
+<button class="cat" onclick="filterMenu('Cemilan',this)">🍢 Cemilan</button>
+<button class="cat" onclick="filterMenu('Minuman',this)">🥤 Minuman</button>
   </div>
   <div class="products" id="products"></div>
  </div>
@@ -210,7 +209,7 @@ footer{background:#281916;color:#fff;padding:30px 0 90px;margin-top:0}
  <div class="container footer-grid">
   <div><h3>DIANA's Kitchen</h3><p>Rasa rumahan yang dibuat dengan hati.</p></div>
   <div><p><b>JAM BUKA</b><br>Senin — Minggu<br>10.00 — 21.00 WIB</p></div>
-  <div><p><b>PEMESANAN</b><br>WhatsApp: 08xxxxxxxxxx<br>Instagram: @dianaskitchen</p></div>
+  <div><p><b>PEMESANAN</b><br>WhatsApp: 0812-8963-6568<br>TikTok: @dianaskitchen</p></div>
  </div>
  <div class="container copyright">© 2026 DIANA's Kitchen • All Rights Reserved</div>
 </footer>
@@ -229,7 +228,7 @@ footer{background:#281916;color:#fff;padding:30px 0 90px;margin-top:0}
 
 <script>
 /* ===== PENGATURAN UTAMA ===== */
-const WA_NUMBER="6281234567890"; // GANTI nomor WhatsApp DIANA's Kitchen
+const WA_NUMBER="6281289636568"; // GANTI nomor WhatsApp DIANA's Kitchen
 
 const menus=[
   {
@@ -244,7 +243,7 @@ const menus=[
   {
     id:2,
     name:"Bubur Sumsum Jenang",
-    cat:"Nasi",
+    cat:"Cemilan",
     price:15000,
     desc:"Bubur sumsum jenang lembut dengan rasa manis yang nikmat.",
     img:"images/bubur sumsum jenang.webp"
@@ -253,7 +252,7 @@ const menus=[
   {
     id:3,
     name:"Dimsum Kebahagiaan",
-    cat:"Ayam",
+    cat:"Cemilan",
     price:18000,
     desc:"Dimsum lezat dengan rasa gurih yang bikin ketagihan.",
     img:"images/dimsum kebahagiaan.webp"
@@ -262,7 +261,7 @@ const menus=[
   {
     id:4,
     name:"Pangsit Goreng Merindu",
-    cat:"Mie",
+    cat:"Cemilan",
     price:15000,
     desc:"Pangsit goreng renyah dengan rasa gurih yang nikmat.",
     img:"images/pangsit goreng merindu.webp"
@@ -271,7 +270,7 @@ const menus=[
   {
     id:5,
     name:"Pangsit Kuah Merindu",
-    cat:"Mie",
+    cat:"Cemilan",
     price:15000,
     desc:"Pangsit kuah hangat dengan rasa gurih dan lezat.",
     img:"images/pangsit kuah merindu.webp"
@@ -279,11 +278,11 @@ const menus=[
 
   {
     id:6,
-    name:"Nasi Goreng Cinta",
-    cat:"Nasi",
+    name:"Singkong Thailand Kesayangan",
+    cat:"Cemilan",
     price:15000,
     desc:"Menu spesial DIANA's Kitchen yang siap menemani waktu makan.",
-    img:"images/nasi goreng cinta.webp"
+    img:"images/singkong thailand kesayangan.webp"
   }
 ];
 
