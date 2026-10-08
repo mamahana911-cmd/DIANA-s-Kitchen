@@ -65,7 +65,13 @@ section{padding:32px 0}
 /* products */
 .products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .card{background:#fffdf9;border:1px solid var(--line);border-radius:19px;overflow:hidden;box-shadow:0 7px 25px #521a1709}
-.food{height:142px;background-size:cover;background-position:center;position:relative}
+.food{
+  aspect-ratio:9/16;
+  width:100%;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
 .tag{position:absolute;left:9px;top:9px;padding:5px 8px;border-radius:8px;background:#fffdf9e8;color:var(--wine);font-size:9px;font-weight:800}
 .card-body{padding:11px}
 .card h3{font-family:"Playfair Display";font-size:16px;color:var(--wine);margin-bottom:4px}
@@ -117,7 +123,13 @@ footer{background:#281916;color:#fff;padding:30px 0 90px;margin-top:0}
 
 @media(min-width:720px){
  .hero{padding:62px 0 70px}.hero-grid{grid-template-columns:1.02fr .98fr}.hero-photo{height:410px}
- .products{grid-template-columns:repeat(4,1fr)}.food{height:180px}
+ .products{
+  grid-template-columns:repeat(3,1fr);
+}
+
+.food{
+  aspect-ratio:9/16;
+}
  .trust-grid{grid-template-columns:repeat(4,1fr)}
  .review{min-width:31%}.footer-grid{grid-template-columns:1.4fr 1fr 1fr}
  .overlay{align-items:center;justify-content:center}.sheet{width:min(520px,94%);border-radius:25px}
@@ -267,11 +279,11 @@ const menus=[
 
   {
     id:6,
-    name:"Nasi Goreng Cintaw",
+    name:"Nasi Goreng Cinta",
     cat:"Nasi",
     price:15000,
     desc:"Menu spesial DIANA's Kitchen yang siap menemani waktu makan.",
-    img:"images/nasi goreng cintaw.webp"
+    img:"images/nasi goreng cinta.webp"
   }
 ];
 
