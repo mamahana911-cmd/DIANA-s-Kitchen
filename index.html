@@ -33,10 +33,44 @@ header{position:sticky;top:0;z-index:50;background:#fffdf9eF;backdrop-filter:blu
 .brand-name{font-family:"Playfair Display";font-size:19px;font-weight:800;color:var(--wine);line-height:1}
 .brand-name small{display:block;font-family:"DM Sans";font-size:7px;letter-spacing:2.2px;color:var(--muted);margin-top:4px}
 .cart{background:var(--wine);color:white;border-radius:13px;padding:10px 12px;font-size:12px;font-weight:700;position:relative}
-.cart-badge{position:absolute;right:-6px;top:-7px;background:var(--gold2);color:var(--wine);width:19px;height:19px;border-radius:50%;display:grid;place-items:center;font-size:10px}
+
+.cart-badge{
+  position:absolute;
+  right:-6px;
+  top:-7px;
+  background:var(--gold2);
+  color:var(--wine);
+  width:19px;
+  height:19px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:10px
+}
+
+/* CSS TOMBOL TIKTOK */
+.tiktok-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #111;
+  color: #fff;
+  border-radius: 13px;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.tiktok-btn:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
 
 /* hero */
 .hero{padding:30px 0 42px}
+
 .hero-grid{display:grid;gap:20px;align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border-radius:99px;background:#fffdf9;border:1px solid var(--line);color:var(--wine);font-size:10px;font-weight:800;letter-spacing:.7px}
 .eyebrow i{width:7px;height:7px;background:var(--gold);border-radius:50%}
@@ -153,7 +187,14 @@ footer{background:#281916;color:#fff;padding:30px 0 90px;margin-top:0}
    <span class="brand-mark">D</span>
    <span class="brand-name">DIANA's Kitchen<small>HOME • FOOD • LOVE</small></span>
   </a>
-  <button class="cart" onclick="openCart()">🛒 Pesanan <span class="cart-badge" id="cartCount">0</span></button>
+  
+<a class="cart tiktok-btn"
+   href="https://www.tiktok.com/@dianadee23.46"
+   target="_blank"
+   rel="noopener noreferrer">
+   ♪ TikTok
+</a>
+
  </div>
 </header>
 
@@ -262,7 +303,7 @@ const menus=[
     id:3,
     name:"Dimsum Kebahagiaan",
     cat:"Cemilan",
-    price:18000,
+    price:35000,
     desc:"Dimsum lezat dengan rasa gurih yang bikin ketagihan.",
     img:"images/dimsum kebahagiaan.webp"
   },
@@ -271,7 +312,7 @@ const menus=[
     id:4,
     name:"Pangsit Goreng Merindu",
     cat:"Cemilan",
-    price:15000,
+    price:35000,
     desc:"Pangsit goreng renyah dengan rasa gurih yang nikmat.",
     img:"images/pangsit goreng merindu.webp"
   },
@@ -280,7 +321,7 @@ const menus=[
     id:5,
     name:"Pangsit Kuah Merindu",
     cat:"Cemilan",
-    price:15000,
+    price:35000,
     desc:"Pangsit kuah hangat dengan rasa gurih dan lezat.",
     img:"images/pangsit kuah merindu.webp"
   },
